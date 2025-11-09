@@ -1,8 +1,6 @@
 import pandas as pd
 from pathlib import Path
 
-# Use package-relative imports so this module works when executed as a package
-# e.g. `python -m src.data_preprocessing.run_preprocessing`
 from .cleaning import rename_categories, remove_unknown
 from .encoding import frequency_encode, group_rare_categories, categorical_encoding
 from .inspection import inspect_null_values,inspect_class_imbalance,outlier_detection
@@ -72,7 +70,7 @@ def run_preprocessing():
     output_path = Path("data/processed/cleaned_dataset.csv")
     output_path.parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(output_path, index=False)
-    print(f"✅ Cleaned dataset saved to: {output_path}")
+    print(f"Cleaned dataset saved to: {output_path}")
 
 if __name__ == "__main__":
     run_preprocessing()
