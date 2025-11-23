@@ -121,6 +121,6 @@ This project was developed as part of a Foundations of Data Science group projec
 | **Shreiya** | [@Shreiya-Muthuvelan](#) | Data preprocessing and Streamlit UI development |
 | **Sanya** | [@aarushi4-ux](#) | Modelling using LightGBM |
 | **Aarushi** | [@sanya28wd](#) | Model explainability (SHAP/LIME), documentation |
-| **Chirudeva** | [@github_id_3](#) | Geospatial analysis, hotspot detection, risk scoring |
+| **Chirudeva** | [@Tactical-Camell](#) | Geospatial analysis, hotspot detection, risk scoring |
 
 
