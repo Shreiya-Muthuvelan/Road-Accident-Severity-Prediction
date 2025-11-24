@@ -208,8 +208,8 @@ def load_model():
 
         metrics = {
             "best_model": "LightGBM",
-            "test_balanced_accuracy": 0.82,
-            "test_macro_f1": 0.79
+            "test_balanced_accuracy": 0.79,
+            "test_macro_f1": 0.80
         }
     
     feat_path = model_path.parent / "reports" / f"feature_importance_{metrics.get('best_model', 'ExtraTrees')}.png"
