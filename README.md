@@ -4,15 +4,15 @@ This repository contains our end-to-end **Road Accident Severity Prediction** pr
 
 ---
 
-## 📂 Dataset
+## Dataset
 
 We use the **Chicago Crash Dataset**, which contains detailed reports of road accidents, including severity, environmental conditions, vehicle details, and locational information.
 
-🔗 **Dataset link:** *[https://www.kaggle.com/datasets/nathaniellybrand/chicago-car-crash-dataset]*
+ **Dataset link:** *[https://www.kaggle.com/datasets/nathaniellybrand/chicago-car-crash-dataset]*
 
 ---
 
-## 🔄 Project Workflow
+## Project Workflow
 
 ### **Data Preprocessing**
 - Data cleaning and validation
@@ -102,25 +102,25 @@ Generated outputs:
 
 ---
 
-## 📈 Model Performance
+##  Model Performance
 
 <!-- REPLACE WITH YOUR ACTUAL METRICS -->
 
 | Metric | Value |
 |--------|-------|
-| **Balanced Accuracy** | 71.8% |
-| **Macro F1-Score** | 80.6% |
+| **Balanced Accuracy** | 79.0% |
+| **Macro F1-Score** | 80.0% |
 
 ---
-## 👥 Contributors
+##  Contributors
 
 This project was developed as part of a Foundations of Data Science group project.
 
 | Name | GitHub | Contribution |
 |------|--------|--------------|
 | **Shreiya** | [@Shreiya-Muthuvelan](#) | Data preprocessing and Streamlit UI development |
-| **Sanya** | [@aarushi4-ux](#) | Modelling using LightGBM |
-| **Aarushi** | [@sanya28wd](#) | Model explainability (SHAP/LIME), documentation |
+| **Sanya** | [@sanya28wd](#) | Modelling using Logistic Regression, Extra Trees ,XGBoost, LightGBM |
+| **Aarushi** | [@aarushi4-ux](#) | Model explainability (SHAP/LIME), documentation |
 | **Chirudeva** | [@Tactical-Camell](#) | Geospatial analysis, hotspot detection, risk scoring |
 
 
