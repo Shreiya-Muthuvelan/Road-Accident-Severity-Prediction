@@ -563,7 +563,7 @@ def main():
             st.metric("Macro F1-Score", f"{metrics.get('test_macro_f1', 0.79)*100:.1f}%")
         
         st.markdown("""  
-        ### 🛠️ Tech Stack
+        ### Tech Stack
         - **ML**: scikit-learn Pipeline + LightGBM
         - **UI**: Streamlit + Plotly
         - **Preprocessing**: SimpleImputer + StandardScaler
