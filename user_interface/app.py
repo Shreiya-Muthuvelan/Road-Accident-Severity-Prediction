@@ -226,7 +226,7 @@ def main():
         classes = label_encoder.classes_
     except Exception as e:
         st.error(f"Error loading model: {e}")
-    ###
+    
     #st.info("""
          #Please ensure these files exist:
         #- `models/best_pipeline.joblib`
@@ -235,8 +235,7 @@ def main():
         #These should have been created by running the modelling script.
         #""")
         #return
-###
-    
+
     st.markdown("""
         <div style="text-align: center; padding: 20px 0 30px 0;">
             <h1 style="font-size: 2.8rem; margin-bottom: 5px;">🚗 Crash Severity Predictor</h1>
