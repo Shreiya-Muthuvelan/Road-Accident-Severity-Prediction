@@ -179,8 +179,8 @@ def load_model():
     
     # Try different possible paths for model files
     possible_paths = [
-        Path("UI/models"),           # models/
-        Path("UI/model"),            # model/
+        Path("user_interface/models"),           # models/
+        Path("user_interface/model"),            # model/
         Path("."),                # current directory
         Path("../models"),        # parent/models
     ]
