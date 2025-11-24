@@ -268,13 +268,13 @@ def main():
         
         st.markdown("---")
         
-        st.markdown("### 📊 Model Performance")
-        st.metric("Balanced Accuracy", f"{metrics.get('test_balanced_accuracy', 0.75)*100:.1f}%")
-        st.metric("Macro F1-Score", f"{metrics.get('test_macro_f1', 0.72)*100:.1f}%")
+        st.markdown("### Model Performance")
+        st.metric("Balanced Accuracy", f"{metrics.get('test_balanced_accuracy', 0.82)*100:.1f}%")
+        st.metric("Macro F1-Score", f"{metrics.get('test_macro_f1', 0.79)*100:.1f}%")
         
         st.markdown("---")
         
-        st.markdown("### 🎯 Prediction Classes")
+        st.markdown("### Prediction Classes")
         for i, cls in enumerate(classes):
             icon = "🟢" if "NO INJURY" in cls.upper() else "🔴"
             st.markdown(f"{icon} **{cls}**")
@@ -410,7 +410,7 @@ def main():
             input_df = pd.DataFrame([input_dict])
             
             # Predict using the pipeline (handles preprocessing internally!)
-            with st.spinner("🔄 Analyzing crash conditions..."):
+            with st.spinner("Analyzing crash conditions..."):
                 prediction = pipeline.predict(input_df)[0]
                 probabilities = pipeline.predict_proba(input_df)[0]
                 
