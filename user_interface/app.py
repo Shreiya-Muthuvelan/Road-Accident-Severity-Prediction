@@ -197,7 +197,7 @@ FEATURE_MAPPINGS = {
 def load_model():
     """Load model and encoder inside user_interface/model/"""
 
-    model_path = Path("model")
+    model_path = Path("user_interface/model")
 
     # Required files
     model_file = model_path / "lightgbm_model.joblib"
