@@ -250,7 +250,7 @@ def main():
         st.markdown("## Navigation")
         page = st.radio(
             "Go to",
-            [" Predict", " Risk Analysis", "About"],
+            [" Predict", " Risk Analysis"],
             label_visibility="collapsed"
         )
         
@@ -524,35 +524,7 @@ def main():
         with col_s4:
             st.metric("Distraction", "25%", "involve phone use")
     
-    # About page
-    elif page == " About":
-        st.markdown("##  About This App")
-        
-        st.markdown(f"""
-        ###  Purpose
-        Predict whether a traffic crash will result in **injury** or be a **non-injury incident**.
-        
-        ###  Model: LightBGM
-        - Full sklearn Pipeline with preprocessing
-        - Handles missing values and feature scaling
-        - Binary classification with probability estimates
-        
-        ###  Performance
-        """)
-        
-        col1, col2 = st.columns(2)
-        with col1:
-            st.metric("Balanced Accuracy", f"{metrics.get('test_balanced_accuracy', 0.75)*100:.1f}%")
-        with col2:
-            st.metric("Macro F1-Score", f"{metrics.get('test_macro_f1', 0.72)*100:.1f}%")
-        
-        st.markdown("""
-        
-        ###  Tech Stack
-        - **ML**: scikit-learn Pipeline + LightGBM
-        - **UI**: Streamlit + Plotly
-        - **Preprocessing**: SimpleImputer + StandardScaler
-        """)
+ 
 
 
 if __name__ == "__main__":
