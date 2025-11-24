@@ -226,15 +226,16 @@ def main():
         classes = label_encoder.classes_
     except Exception as e:
         st.error(f"Error loading model: {e}")
-    '''
-        st.info("""
-        👉 Please ensure these files exist:
-        - `models/best_pipeline.joblib`
-        - `models/label_encoder.joblib`
+    ###
+    #st.info("""
+         #Please ensure these files exist:
+        #- `models/best_pipeline.joblib`
+        #- `models/label_encoder.joblib`
         
-        These should have been created by running the modelling script.
-        """)
-        return'''
+        #These should have been created by running the modelling script.
+        #""")
+        #return
+###
     
     st.markdown("""
         <div style="text-align: center; padding: 20px 0 30px 0;">
